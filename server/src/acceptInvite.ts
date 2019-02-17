@@ -82,8 +82,6 @@ const ACCEPT_INVITE_MUTATION = gql`
 
 
 export default async (event: any, context: any) => {
-  console.log('event:', event);
-  console.log('context:', context);
   const { data: { uuid } } = event;
 
   const { customInvite: customInvite } = await graphQLClient.request(CUSTOM_INVITE_BY_UUID, { uuid });
