@@ -1,0 +1,11 @@
+type AcceptInviteResult {
+  id: ID
+  uuid: String
+  email: String
+  status: String
+  acceptedAt: DateTime
+}
+
+extend type Mutation {
+  acceptInvite(uuid: String): AcceptInviteResult
+}

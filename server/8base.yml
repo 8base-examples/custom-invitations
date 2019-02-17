@@ -1,0 +1,19 @@
+functions:
+  acceptInvite:
+    handler:
+      code: src/acceptInvite.ts
+    type: resolver
+    schema: src/acceptInvite.graphql
+
+  customerInviteCreateBefore:
+    handler:
+      code: src/customerInviteCreateBefore.ts
+    type: trigger.before
+    operation: CustomInvite.create
+
+  customerInviteCreateAfter:
+    handler:
+      code: src/customerInviteCreateAfter.ts
+    type: trigger.after
+    operation: CustomInvite.create    
+
