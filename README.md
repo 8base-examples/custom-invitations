@@ -8,6 +8,7 @@ This repo demonstrates the implementation of custom user invites in multi-tenant
 cd server
 8base login
 8base import -f SCHEMA.json
+npm install
 8base deploy
 ```
 
