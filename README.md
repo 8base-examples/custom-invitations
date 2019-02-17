@@ -11,6 +11,11 @@ cd server
 npm install
 8base deploy
 ```
+3. Create `System` role, give permissions to all tables
+4. Create an API token with `System` role
+5. Create two environment variables: 
+* `API_URL` (workspace API endpoint), 
+* `ROOT_TOKEN`  (token created in step 4)
 
 # Step-by-step workflow
 1. Alice is a user in Company A. She invites Bob to join Company A as manager by creating new `Custom Invite` object. This object contains email of the invitee, assigned roles (manager), link to the Company A record.
