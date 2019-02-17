@@ -29,3 +29,6 @@ npm install
 * customerInviteCreateBefore. Allows to auto-generate `uuid` - a universally unique ID for our invite.
 * customerInviteCreateAfter. Here we can send an email with invite accept link.
 * acceptInvite. Custom resolver that encapsulates all the logic that goes into accepting an invite: creating `Membership` record for the user, transitioning status of the invite to `Accepted`.
+
+# TODO
+* Front-end example
